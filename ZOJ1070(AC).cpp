@@ -1,25 +1,23 @@
-import java.util.Scanner;
- public class Main {
+#include <cmath>
+#include <cstdio>
+using namespace std;
 
-     static double vs = 0;
-     static double c = 0;
-     static double r = 0;
-     static double w = 0;
-     static int times = 0;
-
-     public static void main(String[] args) {
-         Scanner scan = new Scanner(System.in);
-         vs = scan.nextDouble();
-         r = scan.nextDouble();
-         double r2 = r * r;
-         double vsr = vs * r;
-         c = scan.nextDouble();
-         double c2 = c * c;
-         times = scan.nextInt();
-         for (int i = 0; i < times; i++) {
-             w = scan.nextDouble();
-             System.out.printf("%.3f\n", vsr / Math.sqrt(r2 + 1 / (w * w * c2)));
-         }
-     } 
+int main()
+{
+	double vs;
+	double c;
+	double r;
+	double w;
+	int times;
+	
+	scanf("%lf%lf%lf%d", &vs, &r, &c, &times);
+	double r2 = r * r;
+	double vsr = vs * r;
+	double c2 = c * c;
+	for (int i = 0; i < times; i++) {
+		scanf("%lf", &w);
+		printf("%.3f\n", vsr / sqrt(r2 + 1.0 / (w * w * c2)));
+	}
+	
+	return 0;
 }
-
