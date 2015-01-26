@@ -1,3 +1,4 @@
+//Accepted, BRUTE FORCE SIMULATION
 #define _CRT_SECURE_NO_WARNINGS
 #include <cstdio>
 #include <cstdlib>
@@ -79,4 +80,3 @@ int main()
 
 	return 0;
 }
-

@@ -38,6 +38,7 @@ void mymultiply(int x)
 	}
 
 	res = ((long long)res * x) % m;
+	//watch out for integer ovverflow caused by multiplication
 }
 
 void mydivide(int x)
@@ -56,6 +57,7 @@ void mydivide(int x)
 		ext_gcd(x, m, pp, qq);
 		pp = (pp % m + m) % m;
 		res = ((long long)res * pp) % m;
+		//watch out for integer ovverflow caused by multiplication
 	}
 }
 
@@ -130,4 +132,3 @@ int main()
 
 	return 0;
 }
-

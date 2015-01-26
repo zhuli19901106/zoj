@@ -6,16 +6,16 @@ using namespace std;
 
 int comp(const void *a, const void *b)
 {
-	return *(const int *)a < *(const int *)b;
+	return *(const long long int *)a < *(const long long int *)b;
 }
 
 int main()
 {
-	int a[20005];
+	long long int sum;
+	long long int a[20005];
 	int n;
 	int i;
 	int t, ti;
-	int sum;
 	
 	while(true){
 		if(scanf("%d", &t) != 1){
@@ -25,17 +25,16 @@ int main()
 		for(ti = 0; ti < t; ++ti){
 			scanf("%d", &n);
 			for(i = 0; i < n; ++i){
-				scanf("%d", &a[i]);
+				scanf("%lld", &a[i]);
 			}
-			qsort(a, n, sizeof(int), comp);
+			qsort(a, n, sizeof(long long int), comp);
 			sum = 0;
 			for(i = 2; i < n; i += 3){
 				sum += a[i];
 			}
-			printf("%d\n", sum);
+			printf("%lld\n", sum);
 		}
 	}
 	
 	return 0;
 }
-

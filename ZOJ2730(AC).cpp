@@ -10,6 +10,7 @@ int ec;
 int path[5000];
 int n;
 
+//Simple DFS to search for Euler Circuit, yet to be optimized, not so efficient.
 void dfs(int current_node)
 {
 	int i;
@@ -60,4 +61,3 @@ int main()
 
 	return 0;
 }
-

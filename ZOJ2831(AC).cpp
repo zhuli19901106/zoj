@@ -130,6 +130,8 @@ int main()
 		}
 		for(case_no = 0; case_no < case_count; ++case_no){
 			if(case_no > 0){
+				//There is a blank line between consecutive test cases.
+				//Cost me 3WAs..., scheisse~
 				gets(s[0]);
 			}
 			min_len = 100000;
@@ -246,4 +248,3 @@ int main()
 	
 	return 0;
 }
-

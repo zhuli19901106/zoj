@@ -4,6 +4,11 @@
 #include <cstring>
 using namespace std;
 
+/*
+	3155595	2012-12-19 19:04:07	 Accepted	1589	C++	0	180	3090101804
+	Simple application of Floyd's Algorithm to calculate the transitive enclosure of a directed graph.
+*/
+
 int main()
 {
 	int a[26][26];
@@ -73,4 +78,3 @@ int main()
 	
 	return 0;
 }
-
